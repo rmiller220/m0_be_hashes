@@ -1,5 +1,5 @@
 
-Activity:
+# Activity:
 
 # In the below exercises, write code that achieves
 # the desired result. To check your work, run this
@@ -7,23 +7,26 @@ Activity:
 # `ruby hashes_1.rb`
 
 foods = {"apples": 23, "grapes": 507, "eggs": 48}
-p zoo
+
 
 # Write code that prints all of the 'keys' of the foods variable 
 # you created above:
 # YOUR CODE HERE
-
+p foods.keys
 # Write code that prints all of the 'values' of the foods variable 
 # you created above:
 # YOUR CODE HERE
-
+p foods.values
 # Write code that prints the value of the second food of the foods variable 
 # you created above:
 # YOUR CODE HERE
-
+p foods.values[1]
 # Write code that adds a food to the foods hash. 
 # Then, print the updated hash:
 # YOUR CODE HERE
+foods["bananas"] = 50
+
+p foods.keys
 
 
 #-------------------
@@ -37,17 +40,27 @@ p zoo
 # Declare a variable that stores hash. Each key should be an attribute of an email and each
 # value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
+email = {from: "rjm@gmail.com",
+         subject: "school homework",
+        recipient: "amm@gmail.com",
+        attachments: 3,
+        contents: "This is hard, but I am going to keep studying and practicing to get better."}
+
 # Write code that prints your email hash to the terminal.
 
+p email
 
 # Write code that prints all of the 'keys' of the email hash 
 # you created above:
 # YOUR CODE HERE
 
+p email.keys
+
 # Write code that prints all of the 'values' of the email hash 
 # you created above:
 # YOUR CODE HERE
 
+p email.values 
 
 #-------------------
 # Part 3: Many Emails - CHALLENGE!
@@ -97,3 +110,29 @@ p posts[0]
 # YOU DO: Create an array of at least 3 EMAIL Hashes, using the same 
 # key-value pairs you used in your email Hash above.
 # Then, print the email Array to the Terminal.
+
+emails = [
+      {
+        from: "rjm@gmail.com",
+         subject: "school homework",
+        recipient: "amm@gmail.com",
+        attachments: 3,
+        contents: "This is hard, but I am going to keep studying and practicing to get better."
+      },
+      {
+          from: "PVG@gmail.com",
+        subject: "holiday party",
+        recipient: "Tom@gmail.com",
+        attachments: 1,
+        contents: "Hi, We are having our holiday party at 8pm on Saturday. I hope you can make it!"
+        },
+        {
+          from: "Will@gmail.com",
+          subject: "Purchase orders",
+          recipient: "Gigi@gmail.com",
+          attachments: 5,
+          contents: "Hi Gigi! I have 5 new purchase orders for you to fill! They are detailed, so please read them carefully!"
+        }
+]
+
+p emails
